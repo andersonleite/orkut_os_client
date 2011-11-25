@@ -1,0 +1,10 @@
+module Access
+  module Keys
+    
+    CONSUMER_KEY       = 'YOUR_KEY'
+    CONSUMER_SECRET    = 'YOUR_KEY'
+    OAUTH_TOKEN        = 'YOUR_KEY'
+    OAUTH_TOKEN_SECRET = 'YOUR_KEY'
+    
+  end
+end

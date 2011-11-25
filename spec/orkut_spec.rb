@@ -1,4 +1,5 @@
 require "helper"
+require "keys"
 
 describe Orkut do
   
@@ -8,10 +9,10 @@ describe Orkut do
       # stub_post("").
       # to_return(:body => fixture("profile.json"), :headers => {:content_type => "application/json; charset=utf-8"})
       
-      @orkut = Orkut.new(:consumer_key       => 'tictacfight.heroku.com',
-                         :consumer_secret    => 'F_d-RByVwEJe2hV2fE7jo2l5',
-                         :oauth_token        => '1/uSnaAxVdx6SOs0pAjkQO3iC3h-N9Lng4U3N1Q8tivOc',
-                         :oauth_token_secret => '9I6LlarEUjGLBrt2fb3eslyn')
+      @orkut = Orkut.new(:consumer_key       => Access::Keys::CONSUMER_KEY,
+                         :consumer_secret    => Access::Keys::CONSUMER_SECRET,
+                         :oauth_token        => Access::Keys::OAUTH_TOKEN,
+                         :oauth_token_secret => Access::Keys::OAUTH_TOKEN_SECRET)
       
     end
             
