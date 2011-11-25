@@ -1,12 +1,17 @@
 require "orkut/config"
+require "orkut/rpc"
 
 module Orkut
 
   class Client
 
     require "orkut/client/profile"   
+    require "orkut/client/friends"
+    require "orkut/client/scraps"
 
     include Orkut::Client::Profile
+    include Orkut::Client::Friends
+    include Orkut::Client::Scraps
    
     attr_accessor *Config::VALID_OPTIONS_KEYS
    

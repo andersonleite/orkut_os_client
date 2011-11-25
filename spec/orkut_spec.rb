@@ -23,5 +23,17 @@ describe Orkut do
       data['data']['name']['familyName'].should be == 'Leite'
     end
     
+    it "should get user's friends" do
+      @orkut.should_not be_nil
+      data = @orkut.friends
+      data.should_not be_nil
+    end
+
+    it "should get user's scraps" do
+      @orkut.should_not be_nil
+      data = @orkut.scraps
+      data.should_not be_nil
+    end
+    
   end
 end  
