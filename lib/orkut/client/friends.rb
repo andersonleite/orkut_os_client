@@ -2,6 +2,8 @@ module Orkut
   module Client
     module Friends
 
+      FRIENDS = '{ "method" : "people.get", "id" : "myself", "params" : { "userId" : "@me", "groupId" : "@friends", "count" : 999} }'   
+
       # get friends
       def friends (token, secret)
         consumer = initialize_consumer
