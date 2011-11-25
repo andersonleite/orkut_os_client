@@ -15,13 +15,23 @@ module Orkut
               
     FRIENDS = '{ 
                "method" : "people.get",
-               "id" : "myself",
+               "id"     : "myself",
                "params" : 
                { 
-                 "userId" : "@me", 
+                 "userId"  : "@me", 
                  "groupId" : "@friends", 
-                 "count" : 999
+                 "count"   : 999
                 } 
+              }'
+    
+    ALBUMS =  '{
+                "method" : "albums.get",
+                "id"     : "myself",
+                "params" : 
+                {
+                  "userId"  : "@me",
+                  "groupId" : "@self"
+                }
               }'
     
   end

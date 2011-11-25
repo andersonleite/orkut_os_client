@@ -34,6 +34,12 @@ describe Orkut do
       data = @orkut.scraps
       data.should_not be_nil
     end
+
+    it "should get user's albums" do
+      @orkut.should_not be_nil
+      data = @orkut.albums
+      data.should_not be_nil
+    end
     
   end
 end  

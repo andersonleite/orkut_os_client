@@ -8,10 +8,12 @@ module Orkut
     require "orkut/client/profile"   
     require "orkut/client/friends"
     require "orkut/client/scraps"
+    require "orkut/client/albums"
 
     include Orkut::Client::Profile
     include Orkut::Client::Friends
     include Orkut::Client::Scraps
+    include Orkut::Client::Albums
    
     attr_accessor *Config::VALID_OPTIONS_KEYS
    
