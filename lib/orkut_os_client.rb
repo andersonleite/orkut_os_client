@@ -12,5 +12,11 @@ module Orkut
       Orkut::Client.new(options)
     end
     
+    # Delegate to Orkut::Client
+    def method_missing(method, *args, &block)
+      return super unless new.respond_to?(method)
+      new.send(method, *args, &block)
+    end
+    
   end
 end

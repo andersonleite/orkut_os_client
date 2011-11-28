@@ -41,6 +41,15 @@ describe Orkut do
       data = @orkut.albums
       data.should_not be_nil
     end
+
+    it "should get data with one auth" do
+      data = @orkut.profile
+      data.should_not be_nil
+      data = @orkut.scraps
+      data.should_not be_nil
+      data = @orkut.albums
+      data.should_not be_nil
+    end
     
   end
 end  

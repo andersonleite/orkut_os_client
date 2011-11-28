@@ -5,7 +5,8 @@ module Orkut
   class Connect
 
     # generic consumer initializer
-    def initialize_consumer(client)
+    def initialize_consumer(client=nil)
+      
       OAuth::Consumer.new( client.consumer_key, client.consumer_secret,
                             :site               => "https://www.google.com",
                             :request_token_path => "/accounts/OAuthGetRequestToken",
