@@ -1,4 +1,8 @@
-gem install 'orkut_os_client'
+# Orkut OS Client
+A Ruby wrapper for the Orkut RPC-JSON API.
+
+## Installation
+`gem install 'orkut_os_client'`
 
 
 Get Data
