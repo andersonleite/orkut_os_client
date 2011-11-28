@@ -1,5 +1,17 @@
 gem install 'orkut_os_client'
 
+
+Get Data
+orkut = Orkut.new( :consumer_key       => "YOUR_CONSUMER_KEY",
+           :consumer_secret    => "YOUR_CONSUMER_SECRET",
+           :oauth_token        => session[:token],
+           :oauth_token_secret => session[:secret] )
+
+orkut.profile
+orkut.scraps
+orkut.friends
+orkut.albums
+
 Get Authorization
 Firt, you need access_pass(token and secret) 
 
@@ -25,14 +37,3 @@ class OrkutController < ApplicationController
   end
 
 end
-
-Get Data
-orkut = Orkut.new( :consumer_key       => "YOUR_CONSUMER_KEY",
-           :consumer_secret    => "YOUR_CONSUMER_SECRET",
-           :oauth_token        => session[:token],
-           :oauth_token_secret => session[:secret] )
-
-orkut.profile
-orkut.scraps
-orkut.friends
-orkut.albums
