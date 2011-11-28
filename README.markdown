@@ -17,10 +17,12 @@ Create you orkut connect client simple as:
 `                    
 
 You have access to Orkut data using:
-`orkut.profile
-orkut.scraps
-orkut.friends
-orkut.albums`
+`
+    orkut.profile
+    orkut.scraps
+    orkut.friends
+    orkut.albums
+`
 
 ## Get Authorization
 For web-aplications, users need to authorize your app in order to give you the access pass.
