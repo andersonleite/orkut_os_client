@@ -2,19 +2,20 @@
 A Ruby wrapper for the Orkut RPC-JSON API.
 
 ## Installation
-`   
+```   
     gem install 'orkut_os_client'
-`
+```
 
 
 ## Get Data
 Create you orkut connect client simple as:
-`
+
+```
     orkut = Orkut.new( :consumer_key       => "YOUR_CONSUMER_KEY",
                        :consumer_secret    => "YOUR_CONSUMER_SECRET",
                        :oauth_token        => "YOUR_OAUTH_TOKEN",
                        :oauth_token_secret => "YOUR_OAUTH_TOKEN_SECRET" )
-`                    
+```                    
 
 You have access to Orkut data using:
 `
@@ -28,7 +29,7 @@ You have access to Orkut data using:
 For web-aplications, users need to authorize your app in order to give you the access pass.
 Create a controller like that:
 
-`class OrkutController < ApplicationController
+class OrkutController < ApplicationController
 
   def connect
 
