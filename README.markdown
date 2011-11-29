@@ -20,10 +20,10 @@ orkut = Orkut.new( :consumer_key       => "YOUR_CONSUMER_KEY",
 You have access to Orkut data using:
 
 ```
-    orkut.profile
-    orkut.scraps
-    orkut.friends
-    orkut.albums
+orkut.profile
+orkut.scraps
+orkut.friends
+orkut.albums
 ```
 
 ## Get Authorization
