@@ -1,7 +1,6 @@
 # A utility for signing an url using OAuth in a way that's convenient for debugging
 # Note: the standard Ruby OAuth lib is here http://github.com/mojodna/oauth
 # License: http://gist.github.com/375593
-# Usage: see example.rb below
 
 require 'uri'
 require 'openssl'
