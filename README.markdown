@@ -6,6 +6,8 @@ A Ruby wrapper for the Orkut RPC-JSON API.
 gem install 'orkut_os_client'
 ```
 
+## Demo
+You can see a demo web app here: http://orkut.heroku.com/
 
 ## Get Data
 Create you orkut connect client simple as:

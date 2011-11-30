@@ -6,7 +6,7 @@ module Orkut
     end
 
     def self.minor
-      0
+      1
     end
 
     def self.patch
