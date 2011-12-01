@@ -3,7 +3,7 @@ A Ruby wrapper for the Orkut RPC-JSON API.
 
 ## Installation
 ```   
-gem install 'orkut_os_client'
+gem "orkut_os_client", "~> 0.1.0"
 ```
 
 ## Demo
