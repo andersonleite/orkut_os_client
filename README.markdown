@@ -1,7 +1,7 @@
 # Orkut OS Client
 A Ruby wrapper for the Orkut RPC-JSON API.
 
-## Installation
+## Install
 ```   
 gem "orkut_os_client", "~> 0.1.0"
 ```
@@ -55,4 +55,11 @@ class OrkutController < ApplicationController
   end
 
 end
+```
+
+## Sending Scraps
+After initializing orkut_client you can call send_scrap method:
+
+```
+ orkut_client.send_scrap(params[:id], "Orkut OS Client")
 ```

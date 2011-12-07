@@ -54,13 +54,8 @@ module Orkut
       end
 
 
-      def send_scrap(token, secret, friend_social_id, msg)
-  
-        consumer = initialize_consumer
-
-        token_hash = { :oauth_token => token, :oauth_token_secret => secret }
-        access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
-  
+      def send_scrap(friend_social_id, msg)
+    
         data = "
         {
         'method' : 'messages.create',
@@ -79,8 +74,7 @@ module Orkut
         }
         }"
   
-        result = access_token.post(RPC_ENDPOINT, data, { 'Content-Type' => 'application/json' }).body
-        MultiJson.decode(result)
+        Orkut::Connect.new.post_json_rpc self, data
       end
       
     end
