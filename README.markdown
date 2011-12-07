@@ -63,3 +63,8 @@ After initializing orkut_client you can call send_scrap method:
 ```
  orkut_client.send_scrap(params[:id], "Orkut OS Client")
 ```
+
+## Other versions
+This library is a result of Java version reverse engineering.
+[Java version](http://code.google.com/p/orkut-os-client/)
+[PHP version](http://code.google.com/p/orkut-os-client-php/) (by Robson Dantas) 
